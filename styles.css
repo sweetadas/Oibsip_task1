@@ -1,0 +1,149 @@
+/* General Setup */
+body {
+    font-family: 'Roboto', sans-serif; /* Google Font */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: url('background-pattern.png') repeat; /* Replace with decorative background */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Section Styles */
+.section {
+    text-align: center;
+    padding: 80px 0;
+}
+
+#home {
+    background: #f0ebeb; /* Light grey background */
+}
+
+#services {
+    background: #f5f5f5; /* Lighter grey background */
+}
+
+#portfolio {
+    background: #e5e5e5; /* Even lighter grey background */
+}
+
+.contact {
+    background: #f0f0f0; /* Lightest grey background */
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.service-item img {
+    max-width: 150px; /* Larger service images */
+    margin-bottom: 20px;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.portfolio-item {
+    text-align: center;
+}
+
+.portfolio-item img {
+    width: 100%; /* Make all portfolio images the same size */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact Form Styles */
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact form button {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact form button:hover {
+    background: #555;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
